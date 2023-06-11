@@ -18,7 +18,8 @@ import jwt_decode from 'jwt-decode'
 function App() {
   // the currently logged in user will be stored up here in state
   const [currentUser, setCurrentUser] = useState(null)
-// store details of items and list all items
+
+  // store details of items and list all items
   const [items, setItems] = useState([])
 
   // useEffect -- if the user navigates away form the page, we will log them back in

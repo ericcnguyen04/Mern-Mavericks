@@ -45,7 +45,7 @@ const EditItem = (props) => {
     } catch(err) {
         console.warn(err)
     }
-}
+  }
 
   const validateForm = () => {
     const newErrors = {};
@@ -64,7 +64,9 @@ const EditItem = (props) => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+
 const navigate = useNavigate()
+
   const handleSubmit = async event => {
     event.preventDefault();
     // get the token from local storage
